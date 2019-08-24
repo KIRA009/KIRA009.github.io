@@ -1,5 +1,5 @@
 $(document).scroll(function(event) {
-	if ($(document).scrollTop() > $(window).height()) {
+	if ($(document).scrollTop() > 0) {
 		$('nav').addClass('scroll');
 		$('#add').addClass('scroll');
 	}

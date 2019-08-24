@@ -117,13 +117,17 @@ section > h1 {
 	margin: 30px;
 }
 
+#work .row {
+	justify-content: space-between
+}
+
 .work {
 	display: block;
 	min-height: 50vh;
 	border-radius: 5px;
 	transition: 0.3s;
 	cursor: pointer;
-	margin: 20px 5px;
+	margin: 20px 0;
 	padding: 40px 30px;
 	text-align: left;
 	color: #fff;
@@ -131,6 +135,12 @@ section > h1 {
 	overflow-y: hidden;
 	border: 5px solid #ffefb9;
 	text-decoration: none!important;
+}
+
+@media (min-width: 992px) {
+	.work {
+		flex-basis: 49%;
+	}
 }
 
 .work:hover {
@@ -154,12 +164,31 @@ section > h1 {
 	transition: 0.3s;
 }
 
-.work p img {
+.work p > img {
 	max-width: 100%;
 }
 
 .work p.hover {
 	transform: translateY(30px);
+}
+
+.work i {
+	color: white;
+}
+
+.work p a img {
+	width: 60px;
+    position: relative;
+	top: -22px;
+    background-color: white;
+    border-radius: 50%;
+	border: 0px solid white;
+	transition: 0.3s;
+	margin-left: 50px;
+}
+
+.work p a img:hover {
+	transform: scale(1.5);
 }
 
 #contact p {
