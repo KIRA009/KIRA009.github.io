@@ -200,6 +200,14 @@ section > h1 {
 	max-width: 50vw;
 }
 
+#linked-in-img {
+	transition: 0.3s;
+}
+
+#linked-in-img:hover {
+	transform: scale(1.5);
+}
+
 @media (max-width: 992px) {
 	.nav-link:hover {
 		transform: scale(1);
