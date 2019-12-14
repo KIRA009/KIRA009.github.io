@@ -242,16 +242,16 @@ section > h1 {
 	margin-bottom: 40px;
 }
 
-.devicon:before {
+i[class^=fa]:before, i[class^=devicon]:before {
     font-size: 3.5em;
     border-radius: 4px;
     margin: 15px 0 15px 22px;
     display: inline-block;
     transition: 0.3s;
-    cursor: pointer;
+	cursor: pointer;
 }
 
-.devicon:hover:before {
+i[class^=fa]:hover:before, i[class^=devicon]:hover:before {
 	transform: scale(1.5);
 }
 
@@ -299,4 +299,11 @@ a.red:hover {
 
 .navbar-toggler:focus {
 	outline: 0!important;
+}
+
+hr {
+	background-color: #e6e6e4;
+	width: 70%;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
