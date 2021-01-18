@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.8.2/devicon.min.css">
 	<!-- <script src="https://kit.fontawesome.com/08d8f6996a.js" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" type="text/css" href="static/css/index.css">
+	<link rel="stylesheet" type="text/css" href="static/css/index.css">
 	<title>Shohan Dutta Roy</title>
-
 </head>
-<body>
-	<nav class="navbar navbar-expand-lg">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false">
-			<span id="add">+</span>
-		</button>
-		<a class="navbar-brand" href="">Logo Coming soon</a>
 
-		<div class="collapse navbar-collapse" id="navbar">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#work">Work</a>
-				</li>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="d-flex align-items-center justify-content-between w-100 flex-column flex-lg-row">
+			<div class="w-100 d-flex justify-content-between">
+				<a class="navbar-brand" href="">Logo Coming soon</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<ul class="navbar-nav collapse navbar-collapse w-100 justify-content-between" id="navbarNav">
 				<li class="nav-item">
 					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#experience">Experience</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#projects">Projects</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#contact">Contact</a>
@@ -33,122 +37,69 @@
 			</ul>
 		</div>
 	</nav>
+	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Dropdown
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav> -->
 
 	<div class="container-fluid">
 		<div id="short_info">
 			<p id="name">Hi, I am <span class="red">Shohan Dutta Roy</span></p>
-			<p id="info">A <span class="red">web developer</span>, much less a designer. Looking to explore the world of <span class="red">automation</span> and <span class="red">artificial intelligence</span>. I have an eye for a good design and am eager to improve</p>
+			<p id="info">and I am a <span class="red">software developer</span></p>
+		</div>
+		<div id="quicklinks" class="d-flex justify-content-start">
+			<a href="https://github.com/KIRA009" target="_blank" class="pe-2">
+				<i class="devicon-github-plain" style="color: white"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/shohan-dutta-roy/" target="_blank" class="px-2">
+				<i class="devicon-linkedin-plain" style="color: white"></i>
+			</a>
+			<a href="mailto:shohanduttaroy99@gmail.com" target="_blank" class="px-2">
+				<img id="gmail-img" src="/static/images/mail.png" height="80">
+			</a>
 		</div>
 		<a href="#contact" class="contact">Drop me a word <span id="arrow">&#8594;</span> </a><br><br>
-		<span style="color: #bebcc5;">or take a look at <a style="text-decoration: none; cursor: pointer;" class="red" href="#work">my stuff</a></span>
+		<span style="color: #bebcc5;">or take a look at <a style="text-decoration: none; cursor: pointer;" class="red"
+				href="https://drive.google.com/file/d/1A0rphocvVnq9ouBroSr_x4uvzKSlhMUA/view?usp=sharing"
+				target="_blank">my resume</a></span>
 	</div>
-	<section id="work">
-		<h1> work </h1>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-12 work" style="background-color: #132168;">
-					<h1> bingo </h1>
-					<h3> A friendly site where you can play 1v1 games of bingo </h3>
-					<p>
-						<img src="/static/images/bingo.png"><br>
-						<a href="https://github.com/KIRA009/bingo-web" target="_blank">
-							<i class="devicon-github-plain-wordmark"></i>
-						</a>
-						<a href="https://bingoproject.pythonanywhere.com/app" target="_blank">
-							<img src="/static/images/web.png" alt="">
-						</a>
-					</p>
-				</div>
-				<div class="col-lg-6 col-12 work" style="background-color: #000;">
-					<h1> proactivenews </h1>
-					<h3> Your own personal ad free (to an extent) news website</h3>
-					<p>
-						<img src="/static/images/proactivenews.png" width="200"><br>
-						<a href="https://github.com/KIRA009/proactivenews" target="_blank">
-							<i class="devicon-github-plain-wordmark"></i>
-						</a>
-						<a href="https://proactivenews.pythonanywhere.com/news/" target="_blank">
-							<img src="/static/images/web.png" alt="">
-						</a>
-					</p>
-				</div>
-				<div class="col-lg-6 col-12 work" style="background-color: #375daa;">
-					<h1> mymdb </h1>
-					<h3> Your personal movie collection manager</h3>
-					<p>
-						<img src="/static/images/mymdb.png" width="350"><br>
-						<a href="https://github.com/KIRA009/proactivenews" target="_blank">
-							<i class="devicon-github-plain-wordmark"></i>
-						</a>
-						<a href="https://mymdb.pythonanywhere.com/app/login/" target="_blank">
-							<img src="/static/images/web.png" alt="">
-						</a>
-					</p>
-				</div>
-				<div class="col-lg-6 col-12 work" style="background-color: #ffc867; color: #000;">
-					<h1> calorie care </h1>
-					<h3> An SPA which keeps track of your daily food requirements </h3>
-					<p>
-						<img src="/static/images/calorie.png" width="200"><br>
-						<a href="https://github.com/KIRA009/delta-food" target="_blank">
-							<i class="devicon-github-plain-wordmark" style="color: #000;"></i>
-						</a>
-						<a href="https://delta19.pythonanywhere.com/food" target="_blank">
-							<img src="/static/images/web.png" alt="">
-						</a>
-					</p>
-				</div>
-				<div class="col-lg-6 col-12 work" style="background-color: #4d4845;">
-					<h1> expense-splitter </h1>
-					<h3> A mock up site where you can split your expenses, and keep track of it </h3>
-					<p>
-						<img src="/static/images/expense.png" width="200"><br>
-						<a href="https://github.com/KIRA009/expense-splitter" target="_blank">
-							<i class="devicon-github-plain-wordmark"></i>
-						</a>
-						<a href="https://expensesplitter.pythonanywhere.com/app/" target="_blank">
-							<img src="/static/images/web.png" alt="">
-						</a>
-					</p>
-				</div>
-				<div class="col-lg-6 col-12 work" style="background-color: #002244;">
-					<h1> formbuilder </h1>
-					<h3> A rudimentary formbuilder, similar to google forms </h3>
-					<p>
-						<img src="/static/images/formbuilder.jpeg" width="200"><br>
-						<a href="https://github.com/KIRA009/formbuilder" target="_blank">
-							<i class="devicon-github-plain-wordmark"></i>
-						</a>
-						<a href="https://formbuilder.pythonanywhere.com/login/" target="_blank">
-							<img src="/static/images/web.png" alt="">
-						</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="contact">
-		<h1>contact</h1>
-		<div class="container">
-			<p>
-				I'm on the lookout for projects. If you have something in mind, email me at <a class="red" href="mailto:shohanduttaroy99@gmail.com" style="text-decoration: none;" target="_blank">shohanduttaroy99@gmail.com</a>
-			</p>
-			<div class="row">
-				<a href="https://github.com/KIRA009" target="_blank" class="col">
-					<i class="devicon-github-plain" style="color: white"></i>
-				</a>
-				<a href="https://www.facebook.com/shohan.duttaroy" target="_blank" class="col">
-					<i class="devicon-facebook-plain colored"></i>
-				</a>
-				<a href="https://twitter.com/shohan_duttaroy" target="_blank" class="col">
-					<i class="devicon-twitter-plain colored"></i>
-				</a>
-				<a href="https://www.linkedin.com/in/shohan-dutta-roy-a38476173" target="_blank" class="col">
-					<img id="linked-in-img" src="/static/images/linkedin.png" height="80">
-				</a>
-			</div>
-		</div>
-	</section>
 
 	<section id="about">
 		<h1>about</h1>
@@ -158,18 +109,23 @@
 					Profile
 				</div>
 				<div class="col-md-7 col-12 details">
-					Hey 👋 how's it going? I'm an <span class="red">ECE</span> student at <span class="red">National Institute of Technology, Tiruchirappalli</span>. I make small webpages, with my finite knowledge of the web. I am not a designer but I enjoy taking on <span class="red">challenges</span>, to transform ideas from concept to reality. Lately, I've started learning <span class="red">component based js</span>, and moving on from jquery.
+					Hey 👋 how's it going? I'm an <span class="red">ECE</span> student at <span class="red">National
+						Institute of Technology, Tiruchirappalli</span>. I create webpages and websites. I enjoy taking
+					on <span class="red">challenges</span>, to transform ideas from concept to reality. I love learning
+					<span class="red">new things</span>, and trying new techonologies.
 				</div>
 				<div class="col-md-5 col-12 title">
 					Interests
 				</div>
 				<div class="col-md-7 col-12 details">
-					Besides web development, I also code in <span class="red">Python</span>, and love learning new things. I take great interest in <span class="red">football</span>, and am a fan of <span class="red">FC Barcelona</span> <img src="static/images/Barcelona.ico" height="50">
+					Besides web development, I also code small utility programs in <span class="red">Python</span>. I
+					take great interest in <span class="red">football</span>, and am a fan of <span class="red">FC
+						Barcelona</span> <img src="/static/images/Barcelona.ico" id="barcelona-img">
 				</div>
 				<div class="col-md-5 col-12 title">
 					Skills
 				</div>
-				<div class="col-md-7 col-12 details text-center" style="margin-left: -22px;">
+				<div class="col-md-7 col-12 details text-center">
 					<i class="devicon-html5-plain colored" title="html5"></i>
 					<i class="devicon-css3-plain colored" title="css3"></i>
 					<i class="devicon-javascript-plain colored" title="javascript"></i>
@@ -184,8 +140,10 @@
 					<hr>
 					<i class="devicon-mysql-plain colored" title="mysql"></i>
 					<i class="devicon-postgresql-plain colored" title="postgresql"></i>
+					<i class="devicon-mongodb-plain-wordmark" title="mongodb"></i>
 					<hr>
 					<i class="devicon-django-plain" title="django"></i>
+					<i class="devicon-nodejs-plain" title="nodejs"></i>
 					<hr>
 					<i class="devicon-git-plain colored" title="git"></i>
 					<i class="devicon-nginx-plain colored" title="nginx"></i>
@@ -194,9 +152,165 @@
 		</div>
 	</section>
 
-	<script src="static/js/jquery.min.js"></script>
-	<script src="static/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="static/js/index.js"></script>
+	<section id="experience">
+		<h1>experience</h1>
+		<div class="container">
+			<div class="row exp">
+				<div class="col-12 text-start exp-header">
+					<p class="red fs-3">Persius</p>
+					<i class="fs-5">Full stack web development intern</i>
+					<br />
+					<span class="fs-4">September 2019 - July 2020</span>
+				</div>
+				<div class="col-xs-12 col-lg-6 text-start">
+					<img src="/static/images/persius.jpg" id="persius-img">
+				</div>
+				<div class="col-xs-12 col-lg-6 exp-info fs-5 text-start">
+					Persius is a talent recognition platform which allows users to showcase their talent, get recognized
+					and scouted by the best in the industry. Artists on Persius have a unique option to understand what
+					artwork of theirs has more potential and what people like and infer from their art across the world.
+					<br /><br />
+					My job was to develop the website, both the frontend and the backend
+					<div class="stacks">
+						<span class="stack">Django</span>
+						<span class="stack">Jquery</span>
+						<span class="stack">MySQL</span>
+						<span class="stack">Redis</span>
+						<span class="stack">AWS</span>
+					</div>
+				</div>
+			</div>
+			<div class="row exp">
+				<div class="col-12 text-start exp-header">
+					<p class="red fs-3">MyWeblink</p>
+					<i class="fs-5">Backend web development intern</i>
+					<br />
+					<span class="fs-4">October 2019 - March 2020</span>
+				</div>
+				<div class="col-xs-12 col-lg-6 text-start">
+					<img src="/static/images/myweblink.png" id="myweblink">
+				</div>
+				<div class="col-xs-12 col-lg-6 exp-info fs-5 text-start">
+					MyWeblink is a platform for social influencers to create custom brand pages, with useful analytics
+					for page visits. It also comes with a marketplace where they can market their brand and its products
+					<br /><br />
+					My job was to develop backend apis which were to be consumed by the website and an android app
+					<div class="stacks">
+						<span class="stack">Django</span>
+						<span class="stack">PostgreSQL</span>
+						<span class="stack">Redis</span>
+						<span class="stack">Azure</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<section id="projects">
+		<h1>projects</h1>
+		<div class="container">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-12 project" style="background-color: #ffefb9; color: rgba(0, 0, 0, 0.8);">
+						<h1> mock server </h1>
+						<h3> A lightweight web app that can help you generate custom API responses so you can start
+							working on your application straightaway </h3>
+						<p>
+							<img src="/static/images/mockserver.png" id="mockserver-img" width="350"><br>
+						<div class="links d-flex justify-content-around align-items-center">
+							<a href="https://github.com/KIRA009/mock-server" target="_blank">
+								<i class="devicon-github-original-wordmark" style="color: black;"></i>
+							</a>
+						</div>
+						</p>
+					</div>
+					<div class="col-lg-6 col-12 project" style="background-color: #525f93;">
+						<h1> pragyan premier league </h1>
+						<h3> An online fantasy cricket league that lets you manage your own team </h3>
+						<p>
+							<img src="/static/images/ppl.png" class="my-5" width="350"><br>
+						<div class="links d-flex justify-content-around align-items-center">
+							<a href="https://delta.nitt.edu/projects/" target="_blank">
+								<img src="/static/images/web.png" alt="">
+							</a>
+						</div>
+						</p>
+					</div>
+					<div class="col-lg-6 col-12 project" style="background-color: #375daa;">
+						<h1> mymdb </h1>
+						<h3> Your personal movie collection manager</h3>
+						<p>
+							<img src="/static/images/mymdb.png" width="350"><br>
+						<div class="links d-flex justify-content-around align-items-center">
+							<a href="https://github.com/KIRA009/proactivenews" target="_blank">
+								<i class="devicon-github-original-wordmark"></i>
+							</a>
+							<a href="https://mymdb.pythonanywhere.com/app/login/" target="_blank">
+								<img src="/static/images/web.png" alt="">
+							</a>
+						</div>
+						</p>
+					</div>
+					<div class="col-lg-6 col-12 project" style="background-color: #002244;">
+						<h1> formbuilder </h1>
+						<h3> A rudimentary formbuilder, similar to google forms </h3>
+						<p>
+							<img src="/static/images/formbuilder.jpeg" width="200"><br>
+						<div class="links d-flex justify-content-around align-items-center">
+							<a href="https://github.com/KIRA009/formbuilder" target="_blank">
+								<i class="devicon-github-original-wordmark"></i>
+							</a>
+							<a href="https://formbuilder.pythonanywhere.com/login/" target="_blank">
+								<img src="/static/images/web.png" alt="">
+							</a>
+						</div>
+						</p>
+					</div>
+					<div class="col-lg-6 col-12 project" style="background-color: #132168;">
+						<h1> bingo </h1>
+						<h3> A friendly site where you can play 1v1 games of bingo </h3>
+						<p>
+							<img src="/static/images/bingo.png"><br>
+						<div class="links d-flex justify-content-around align-items-center">
+							<a href="https://github.com/KIRA009/bingo-web" target="_blank">
+								<i class="devicon-github-original-wordmark"></i>
+							</a>
+							<a href="https://bingoproject.pythonanywhere.com/app" target="_blank">
+								<img src="/static/images/web.png" alt="">
+							</a>
+						</div>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<h1>contact</h1>
+		<div class="container">
+			<p class="mb-5">
+				I'm on the lookout for projects. If you have something in mind, email me at <a class="red"
+					href="mailto:shohanduttaroy99@gmail.com" style="text-decoration: none;"
+					target="_blank">shohanduttaroy99@gmail.com</a>
+			</p>
+			<div class="row">
+				<a href="https://github.com/KIRA009" target="_blank" class="col">
+					<i class="devicon-github-plain" style="color: white"></i>
+				</a>
+				<a href="https://www.facebook.com/shohan.duttaroy" target="_blank" class="col">
+					<i class="devicon-facebook-plain colored"></i>
+				</a>
+				<a href="https://twitter.com/shohan_duttaroy" target="_blank" class="col">
+					<i class="devicon-twitter-plain colored"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/shohan-dutta-roy" target="_blank" class="col">
+					<i class="devicon-linkedin-plain colored"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+	<script src="/static/js/bootstrap.min.js"></script>
 </body>
+
 </html>

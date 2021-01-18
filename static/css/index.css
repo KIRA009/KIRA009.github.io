@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:600|Quattrocento+Sans:400,400i,700');
+
+:root {
+	--border-color: rgba(232, 230, 227, 0.88);
+}
 
 
 html {
@@ -6,36 +10,28 @@ html {
 }
 
 body {
-	font-family: Karla;
+	font-family: 'Work Sans';
 	background-color: #2e2c35;
 	color: #f73839;
 	overflow-x: hidden!important;
 	max-width: 100vw;
 	margin-bottom: 50px;
-	transition: 0.5s;
+    transition: 0.5s;
 }
 
-body.clicked {
-	transform: scale(0) rotateZ(360deg);
-}
-
-nav {
-	position: fixed!important;
+nav.navbar-expand-lg {
+	position: fixed;
 	width: 100vw;
-	background-color: #e6e6e4!important;
+	background-color: #e6e6e4;
 	transition: 0.5s;
 	height: 75px;
-	z-index: 999;
+    z-index: 999;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-nav.scroll {
-	height: 55px;
-}
-
-#navbar {
-	background-color: #e6e6e4!important;
-	margin-left: -17px;
-	margin-right: -17px;
+#navbarNav {
+	background-color: #f8f9fa;
 }
 
 .nav-link {
@@ -45,10 +41,11 @@ nav.scroll {
 	font-size: 1.3em;
 	padding-right: 30px!important;
 	padding-left: 20px!important;
+	text-transform: uppercase;
 }
 
 .nav-link:hover {
-	transform: scale(1.5);
+	transform: scale(1.2);
 	color: #435892;
 }
 
@@ -87,141 +84,36 @@ nav.scroll {
 	text-decoration: none!important;
 }
 
-.contact:hover {
-	border: 2px solid #f73839;
-	color: #f73839;
-	letter-spacing: 5px;
+#barcelona-img {
+	width: 50px;
 }
 
-
-#arrow {
-	color: #f73839!important;
-	transition: 0.3s;
-	display: inline-block;
-}
-
-#arrow.hover {
-	transform: rotateZ(90deg);
-	margin-left: 40px;
-}
-
-section {
-	text-align: center!important;
-	font-weight: 700;
-	color: #bebcc5;
-	margin-top: 100px;
-}
-
-section > h1 {
-	font-size: 35px;
-	margin: 30px;
-}
-
-#work .row {
-	justify-content: space-between
-}
-
-.work {
-	display: block;
-	min-height: 50vh;
-	border-radius: 5px;
-	transition: 0.3s;
+i[class^=fa]:before, i[class^=devicon]:before, #gmail-img {
+    font-size: 2.5em;
+    border-radius: 4px;
+    display: inline-block;
+    transition: 0.3s;
 	cursor: pointer;
-	margin: 20px 0;
-	padding: 40px 30px;
-	text-align: left;
-	color: #fff;
-	font-weight: 700;
-	overflow-y: hidden;
-	border: 5px solid #ffefb9;
-	text-decoration: none!important;
 }
 
-@media (min-width: 992px) {
-	.work {
-		flex-basis: 49%;
-	}
-}
-
-.work:hover {
-	transform: scale(1.1);
-	color: #fff;
-}
-
-.work h1 {
-	font-size: 27px;
-	margin-bottom: 30px;
-	font-weight: 700;
-}
-
-.work h3 {
-	font-size: 18px;
-}
-
-.work p {
-	text-align: center;
-	transform: translateY(150px);
-	transition: 0.3s;
-}
-
-.work p > img {
-	max-width: 100%;
-}
-
-.work p.hover {
-	transform: translateY(30px);
-}
-
-.work i {
-	color: white;
-}
-
-.work p a img {
-	width: 60px;
-    position: relative;
-	top: -22px;
-    background-color: white;
-    border-radius: 50%;
-	border: 0px solid white;
-	transition: 0.3s;
-	margin-left: 50px;
-}
-
-.work p a img:hover {
+i[class^=fa]:hover:before, i[class^=devicon]:hover:before, #gmail-img:hover {
 	transform: scale(1.5);
 }
 
-#contact p {
-	box-shadow: rgba(190, 188, 197, 0.024) 0px 0px 0px 10px;
-	background-color: rgba(190, 188, 197, 0.06);
-	display: inline-block;
-	padding: 30px;
-	font-size: 20px;
-	max-width: 50vw;
-}
-
-#linked-in-img {
+.red {
+	color: #f73839;
 	transition: 0.3s;
 }
 
-#linked-in-img:hover {
-	transform: scale(1.5);
+a.red:hover {
+	color: #fff;
 }
 
-@media (max-width: 992px) {
-	.nav-link:hover {
-		transform: scale(1);
-		background-color: #fcad8d;
-		color: #fff;
-	}
-
-	#info {
-		max-width: 75vw;
-	}
-
-	#contact p {
-		max-width: 100vw;
-	}
+#gmail-img {
+	width: 55px;
+	height: 55px;
+	position: relative;
+	top: -5px;
 }
 
 #about {
@@ -242,68 +134,141 @@ section > h1 {
 	margin-bottom: 40px;
 }
 
-i[class^=fa]:before, i[class^=devicon]:before {
-    font-size: 3.5em;
-    border-radius: 4px;
-    margin: 15px 0 15px 22px;
-    display: inline-block;
-    transition: 0.3s;
+section {
+	max-width: max(70vw, 400px);
+	margin: auto;
+	text-align: center!important;
+	font-weight: 700;
+	color: #bebcc5;
+	margin-top: 100px;
+}
+
+section > h1 {
+	font-size: 35px;
+	margin: 30px;
+	text-transform: capitalize;
+	color: #ffe41a;
+}
+
+.exp {
+	margin: auto;
+	padding: 30px 0;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.exp-header {
+	margin-bottom: 30px;
+}
+
+.exp-header p {
+	margin-bottom: 5px;
+}
+
+@media (max-width: 992px) {
+	.exp-info {
+		margin-top: 15px;
+	}
+}
+
+@media (min-width: 992px) {
+	.project {
+		width: 48%;
+	}
+}
+
+.exp-info .stacks {
+	margin-top: 10px;
+}
+
+.exp-info .stack {
+	display: inline-block;
+	border: 1px solid var(--border-color);
+	margin-right: 0.5rem;
+	padding: 0.2rem;
+	border-radius: 10px;
+	font-size: 1rem;
+}
+
+#myweblink {
+	width: 300px;
+}
+
+#persius-img {
+	width: 100%;
+}
+
+.project {
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s;
 	cursor: pointer;
+	margin: 20px 1%;
+	padding: 40px 30px;
+	text-align: left;
+	color: #fff;
+	font-weight: 700;
+	overflow-y: hidden;
+	border: 5px solid #ffefb9;
+	text-decoration: none!important;
 }
 
-i[class^=fa]:hover:before, i[class^=devicon]:hover:before {
-	transform: scale(1.5);
+.project:hover {
+	transform: scale(1.1);
 }
 
-.red {
-	color: #f73839;
+.project h1 {
+	font-size: 27px;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+
+.project h3 {
+	font-size: 18px;
+	line-height: 1.3em;
+}
+
+.project p {
+	text-align: center;
 	transition: 0.3s;
 }
 
-a.red:hover {
-	color: #fff;
+.project p > img {
+	max-width: 100%;
+	margin-bottom: 25px;
 }
 
-#add {
-	font-size: 2em;
-    color: #fff;
-    background-color: #2e2c35;
-    display: inline-block;
+.project i {
+	color: white;
+}
+
+.project .links a img {
+	width: 60px;
     position: relative;
-    padding: 4px 15px 7px;
+	top: -5px;
+    background-color: white;
     border-radius: 50%;
-    cursor: pointer;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    z-index: 9999;
+	border: 0px solid white;
+	transition: 0.3s;
 }
 
-#add.clicked {
-	padding: 4px 15px 8px;
-	-webkit-transform: rotateZ(135deg);
-	    -ms-transform: rotate(135deg);
-	        transform: rotateZ(135deg);
-	background-color: #f73839;
+.project .links a img:hover {
+	transform: scale(1.5);
 }
 
-#add.scroll {
-	padding: 1px 10px 4px;
-	font-size: 1.5em;
+#mockserver-img {
+	margin-top: 30px;
 }
 
-.navbar-toggler {
-	position: relative;
-	padding: 0;
+.devicon-github-original-wordmark {
+	font-size: 20px;
 }
 
-.navbar-toggler:focus {
-	outline: 0!important;
-}
-
-hr {
-	background-color: #e6e6e4;
-	width: 70%;
-	margin-top: 10px;
-	margin-bottom: 10px;
+#contact p {
+	box-shadow: rgba(190, 188, 197, 0.024) 0px 0px 0px 10px;
+	background-color: rgba(190, 188, 197, 0.06);
+	display: inline-block;
+	padding: 30px;
+	font-size: 20px;
+	max-width: max(50vw, 300px);
+	word-wrap: break-word;
 }
